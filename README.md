@@ -1,6 +1,9 @@
 # Appium cross platform example
 
 An example project of cross platform testing  on Android and iOS application. All tests work only with iOS/Android emulator.
+List of test cases:
+- addWiFiNetwork
+- connectToNewWiFiNetwork
 
 ## Tested application
 
