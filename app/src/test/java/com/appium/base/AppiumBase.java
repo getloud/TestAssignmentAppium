@@ -39,7 +39,7 @@ public class AppiumBase {
         switch (executionOS) {
             case ANDROID:
                 File classpathRootAndroid = new File(System.getProperty("user.dir"));
-                File appDirAndroid = new File(classpathRootAndroid, "/app/src/main/java/com/example/wood/testassignment/");
+                File appDirAndroid = new File(classpathRootAndroid, "/app/src/main/");
                 File appAndroid = new File(appDirAndroid, "WiFiSettings.apk");
 
                 capabilities = new DesiredCapabilities();
@@ -55,13 +55,13 @@ public class AppiumBase {
 
             case IOS:
                 File classpathRootIOS = new File(System.getProperty("user.dir"));
-                File appDirIOS = new File(classpathRootIOS, "/app/src/main/java/com/example/wood/testassignment/");
+                File appDirIOS = new File(classpathRootIOS, "/app/src/main/");
                 File appIOS = new File(appDirIOS, "WiFiSettingS.app");
 
                 capabilities = new DesiredCapabilities();
                 capabilities.setCapability("app", appIOS.getAbsolutePath());
                 capabilities.setCapability("automationName", "XCUITest");
-                capabilities.setCapability("deviceName", "iPhone 6");
+                capabilities.setCapability("deviceName", "iPhone 5s");
                 capabilities.setCapability("platformName", "IOS");
                 capabilities.setCapability("platformVersion", "10.3");
                 capabilities.setCapability("bundleId", "com.woodwayfarer.org.WiFiSettingS");
